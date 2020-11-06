@@ -1,30 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SimpleCamera_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleCamera_Example" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgx-Ut-eoc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lKC-mi-Ttk" appends="YES" id="N5z-kH-6DB"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0f-Bx-uOs">
+                                <rect key="frame" x="182" y="792" width="50" height="50"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="qtV-q2-qyI"/>
+                                    <constraint firstAttribute="height" constant="50" id="wlO-nm-bej"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="CapturePhoto"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="capturePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PqC-h4-fCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t0f-Bx-uOs" secondAttribute="bottom" constant="20" id="4FR-Pi-mVM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t0f-Bx-uOs" secondAttribute="trailing" constant="20" id="LP0-WJ-NUI"/>
+                            <constraint firstItem="t0f-Bx-uOs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wq5-oC-doM"/>
+                            <constraint firstItem="t0f-Bx-uOs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xlv-zC-F51"/>
+                            <constraint firstItem="t0f-Bx-uOs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qPB-HE-amm"/>
+                            <constraint firstItem="Sgx-Ut-eoc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qsu-cg-Xat"/>
+                            <constraint firstItem="Sgx-Ut-eoc" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="tz9-0i-9V1"/>
+                            <constraint firstItem="Sgx-Ut-eoc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w3u-wG-F0K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sgx-Ut-eoc" secondAttribute="trailing" id="yWG-6Z-jDP"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LP0-WJ-NUI"/>
+                                <exclude reference="Wq5-oC-doM"/>
+                                <exclude reference="Xlv-zC-F51"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="4FR-Pi-mVM"/>
+                                <include reference="LP0-WJ-NUI"/>
+                                <include reference="Wq5-oC-doM"/>
+                                <include reference="Xlv-zC-F51"/>
+                                <exclude reference="qPB-HE-amm"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="captureButton" destination="t0f-Bx-uOs" id="sEQ-el-Rr9"/>
+                        <outlet property="previewView" destination="Sgx-Ut-eoc" id="1vL-75-2wB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lKC-mi-Ttk">
+                    <connections>
+                        <action selector="focusAndExposeTap:" destination="BYZ-38-t0r" id="5hm-nB-3e8"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="142" y="65"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CapturePhoto" width="150" height="150"/>
+    </resources>
 </document>

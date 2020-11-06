@@ -1,0 +1,6 @@
+framework module SimpleCamera {
+  umbrella header "SimpleCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}

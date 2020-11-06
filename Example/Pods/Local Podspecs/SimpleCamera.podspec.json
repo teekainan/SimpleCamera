@@ -1,0 +1,24 @@
+{
+  "name": "SimpleCamera",
+  "version": "0.1.0",
+  "summary": "A SimpleCamera for iOS App.",
+  "description": "\"A custom camera app only for capture photos.\"",
+  "homepage": "https://github.com/teekainan/SimpleCamera",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "teekainan": "teekainan@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/teekainan/SimpleCamera.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "SimpleCamera/Classes/**/*",
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}

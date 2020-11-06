@@ -1,0 +1,16 @@
+PODS:
+  - SimpleCamera (0.1.0)
+
+DEPENDENCIES:
+  - SimpleCamera (from `../`)
+
+EXTERNAL SOURCES:
+  SimpleCamera:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SimpleCamera: 580398270248b211aba584400e9e05103c79415e
+
+PODFILE CHECKSUM: 484f801b4b77167abcf4bb8cba94e22e3f7d7265
+
+COCOAPODS: 1.10.0
