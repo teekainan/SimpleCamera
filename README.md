@@ -13,12 +13,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-SimpleCamera is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'SimpleCamera'
-```
+SimpleCamera is only available through my private spec repo. To install
+it, you will need to clone the repo and create your own pod with it.
 
 ## Author
 
@@ -27,3 +23,8 @@ teekainan, teekainan@gmail.com
 ## License
 
 SimpleCamera is available under the MIT license. See the LICENSE file for more info.
+
+## Reference
+- [Apple Camera App Documentation with Source Code](https://developer.apple.com/documentation/avfoundation/cameras_and_media_capture/avcam_building_a_camera_app)
+- [Online medium reference](https://medium.com/@barbulescualex/making-a-custom-camera-in-ios-ea44e3087563)
+
