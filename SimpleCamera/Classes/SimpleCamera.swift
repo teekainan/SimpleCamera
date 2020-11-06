@@ -1,6 +1,6 @@
 //
 //  SimpleCamera.swift
-//  CustomCamera
+//  SimepleCamera
 //
 //  Created by Kai Nan on 06/11/2020.
 //

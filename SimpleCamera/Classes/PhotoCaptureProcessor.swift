@@ -1,6 +1,6 @@
 //
 //  PhotoCaptureProcessor.swift
-//  CustomCamera
+//  SimpleCamera
 //
 //  Created by Kai Nan on 06/11/2020.
 //

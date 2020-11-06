@@ -53,8 +53,8 @@ class ViewController: UIViewController {
                 break
             case .notAuthorized:
                 DispatchQueue.main.async {
-                    let message = "CustomCamera doesn't have permission to use the camera, please change privacy settings"
-                    let alertController = UIAlertController(title: "CustomCamera", message: message, preferredStyle: .alert)
+                    let message = "SimpleCamera doesn't have permission to use the camera, please change privacy settings"
+                    let alertController = UIAlertController(title: "SimpleCamera", message: message, preferredStyle: .alert)
                     
                     alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             case .configurationFailed:
                 DispatchQueue.main.async {
                     let message = "Unable to capture media"
-                    let alertController = UIAlertController(title: "CustomCamera", message: message, preferredStyle: .alert)
+                    let alertController = UIAlertController(title: "SimpleCamera", message: message, preferredStyle: .alert)
                     
                     alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     
